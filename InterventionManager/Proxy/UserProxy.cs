@@ -12,19 +12,19 @@ namespace InterventionManager.Proxy
     public class UserProxy : IUser
     {
         private readonly string _nom;
-        private readonly Role _role;
+        public Role Role { get; }
 
         public UserProxy(string nom, Role role)
         {
             _nom = nom;
-            _role = role;
+            Role = role;
         }
 
         public void Sauvegarder(Intervention intervention)
         {
-            if (_role == Role.Ecriture)
+            if (Role == Role.Ecriture)
             {
-                Console.WriteLine($" {_nom} a sauvegardé l'intervention {intervention.Id}");
+                Console.WriteLine($" {_nom} a sauvegardï¿½ l'intervention {intervention.Id}");
                 // Simuler la sauvegarde dans un fichier ou base
             }
             else
