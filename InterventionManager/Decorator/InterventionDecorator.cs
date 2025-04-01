@@ -1,34 +1,19 @@
-using Models;
+using InterventionManager.Models;
 
-namespace Decorator
+namespace InterventionManager.Decorator
 {
     public abstract class InterventionDecorator : Intervention
     {
         protected Intervention _intervention;
 
-        public InterventionDecorator(Intervention intervention)
+        protected InterventionDecorator(Intervention intervention)
         {
             _intervention = intervention;
         }
 
-        public override void AssignerTechnicien(Technicien technicien)
+        public override void Afficher()
         {
-            _intervention.AssignerTechnicien(technicien);
-        }
-
-        public override void ChangerEtat(string nouvelEtat)
-        {
-            _intervention.ChangerEtat(nouvelEtat);
-        }
-
-        public override void Attach(Observer.IObserver observer)
-        {
-            _intervention.Attach(observer);
-        }
-
-        public override void Detach(Observer.IObserver observer)
-        {
-            _intervention.Detach(observer);
+            _intervention.Afficher();
         }
     }
 }

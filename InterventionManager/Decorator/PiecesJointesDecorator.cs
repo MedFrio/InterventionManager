@@ -1,16 +1,16 @@
 using System;
-using Models;
+using InterventionManager.Models;
 
-namespace Decorator
+namespace InterventionManager.Decorator
 {
     public class PiecesJointesDecorator : InterventionDecorator
     {
         public PiecesJointesDecorator(Intervention intervention) : base(intervention) { }
 
-        public override void Sauvegarder()
+        public override void Afficher()
         {
-            Console.WriteLine("[PiècesJointes] Ajout de pièces jointes simulé.");
-            _intervention.Sauvegarder();
+            _intervention.Afficher();
+            Console.WriteLine("📎 Pièces jointes ajoutées à l'intervention.");
         }
     }
 }

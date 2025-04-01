@@ -1,16 +1,16 @@
 using System;
-using Models;
+using InterventionManager.Models;
 
-namespace Decorator
+namespace InterventionManager.Decorator
 {
     public class SuiviGPSDecorator : InterventionDecorator
     {
         public SuiviGPSDecorator(Intervention intervention) : base(intervention) { }
 
-        public override void Sauvegarder()
+        public override void Afficher()
         {
-            Console.WriteLine("[SuiviGPS] Position GPS enregistrée.");
-            _intervention.Sauvegarder();
+            _intervention.Afficher();
+            Console.WriteLine("📡 Suivi GPS activé pour cette intervention.");
         }
     }
 }
