@@ -1,5 +1,5 @@
 using System.IO;
-using Models;
+using InterventionManager.Models;
 
 namespace Observer
 {

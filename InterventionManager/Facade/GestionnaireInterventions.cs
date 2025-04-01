@@ -1,6 +1,6 @@
-using Factory;
-using Models;
-using Proxy;
+using InterventionManager.Models;
+using InterventionManager.Facade;
+using InterventionManager.Proxy;
 
 namespace Facade
 {

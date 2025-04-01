@@ -1,4 +1,4 @@
-using Models;
+using InterventionManager.Models;
 
 namespace Observer
 {
