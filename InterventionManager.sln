@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.13.35806.99
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InterventionManager", "InterventionManager\InterventionManager.csproj", "{AF7935E9-14B1-438B-B322-57D0676CBE3C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AF7935E9-14B1-438B-B322-57D0676CBE3C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AF7935E9-14B1-438B-B322-57D0676CBE3C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AF7935E9-14B1-438B-B322-57D0676CBE3C}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{AF7935E9-14B1-438B-B322-57D0676CBE3C}.Debug|x64.Build.0 = Debug|Any CPU
+		{AF7935E9-14B1-438B-B322-57D0676CBE3C}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{AF7935E9-14B1-438B-B322-57D0676CBE3C}.Debug|x86.Build.0 = Debug|Any CPU
+		{AF7935E9-14B1-438B-B322-57D0676CBE3C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AF7935E9-14B1-438B-B322-57D0676CBE3C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AF7935E9-14B1-438B-B322-57D0676CBE3C}.Release|x64.ActiveCfg = Release|Any CPU
+		{AF7935E9-14B1-438B-B322-57D0676CBE3C}.Release|x64.Build.0 = Release|Any CPU
+		{AF7935E9-14B1-438B-B322-57D0676CBE3C}.Release|x86.ActiveCfg = Release|Any CPU
+		{AF7935E9-14B1-438B-B322-57D0676CBE3C}.Release|x86.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B6DD4C85-84D5-46FF-867E-6B00DA837DFB}
+	EndGlobalSection
+EndGlobal
