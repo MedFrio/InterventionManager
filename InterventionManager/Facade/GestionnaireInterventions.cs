@@ -1,8 +1,8 @@
-using Factory;
-using Models;
-using Proxy;
+using InterventionManager.Models;
+using InterventionManager.Factory;
+using InterventionManager.Proxy;
 
-namespace Facade
+namespace InterventionManager.Facade
 {
     public class GestionnaireInterventions
     {
@@ -14,17 +14,17 @@ namespace Facade
             _user = user;
         }
 
-        public Intervention CreerIntervention(string type)
+        public Intervention CreerIntervention(TypeIntervention type)
         {
-            if (!_user.PeutEcrire())
+            if (_user.Role != Role.Ecriture)
                 throw new UnauthorizedAccessException("L'utilisateur n'a pas le droit de créer une intervention.");
 
-            return _factory.Creer(type);
+            return _factory.CreerIntervention(type);
         }
 
         public void AssignerTechnicien(Intervention intervention, Technicien technicien)
         {
-            if (!_user.PeutEcrire())
+            if (_user.Role != Role.Ecriture)
                 throw new UnauthorizedAccessException("L'utilisateur n'a pas le droit de modifier une intervention.");
 
             intervention.AssignerTechnicien(technicien);
@@ -32,10 +32,10 @@ namespace Facade
 
         public void Sauvegarder(Intervention intervention)
         {
-            if (!_user.PeutLire())
-                throw new UnauthorizedAccessException("L'utilisateur n'a pas le droit de lire/sauvegarder une intervention.");
-
-            intervention.Sauvegarder();
+            if (_user.Role == Role.Lecture || _user.Role == Role.Ecriture)
+                _user.Sauvegarder(intervention);
+            else
+                throw new UnauthorizedAccessException("L'utilisateur ne peut pas sauvegarder l'intervention.");
         }
     }
 }
