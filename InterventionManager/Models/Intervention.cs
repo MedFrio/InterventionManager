@@ -41,6 +41,11 @@ namespace InterventionManager.Models
             TechnicienAssigne = technicien;
             Notifier();
         }
+        public override string ToString()
+        {
+            return $"{GetType().Name} - {Lieu} - {Date:dd/MM/yyyy HH:mm} - {Etat}";
+        }
+
 
         public abstract void Afficher();
     }
