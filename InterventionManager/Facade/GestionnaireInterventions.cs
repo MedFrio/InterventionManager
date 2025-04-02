@@ -1,5 +1,9 @@
 using InterventionManager.Models;
+
 using InterventionManager.Factory;
+
+using InterventionManager.Facade;
+
 using InterventionManager.Proxy;
 
 namespace InterventionManager.Facade
