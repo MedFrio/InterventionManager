@@ -143,9 +143,4 @@ GestionnaireInterventions
 
 ---
 
-## ✍️ Réalisé par
-Mohammed Friouichen – ESGI – Projet Design Patterns
-
----
-
 📎 Rendu final prêt : code, menu interactif, architecture modulaire, et respect 100% du cahier des charges.
